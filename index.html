@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPP javaScript y HTML</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <script src="./6-DispositivoEntrada.js"></script>
+    <script src="./5-Orden.js"></script>
+    <script src="./4-Computadora.js"></script>
+    <script src="./1-Raton.js"></script>
+    <script src="./2-Teclado.js"></script>
+    <script src="./3-Monitor.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 >Ordenes de pedido </h2>
+        <hr>
+        <!--Formulario-->
+        <form id="forma">
+            <!--Raton-->
+            <h5 class="text-primary">Características del Raton</h5>
+            <div class="mb-3">
+                <label>Tipo de entrada</label>
+                <input type="text" class="form-control" placeholder="Ingrese el tipo de entrada del raton" id="tiporaton">
+            </div>
+            <div class="mb-3">
+                <label>Marca</label>
+                <input type="text" class="form-control" placeholder="Ingresar la marca del raton" id="marcaraton">
+            </div>
+
+            <!--Teclado-->
+            <h5 class="text-primary">Caracteristicas del Teclado</h5>
+            <div class="mb-3">
+                <label>Tipo de entrada</label>
+                <input type="text" class="form-control" placeholder="Ingresar el tipo de entrada del raton" id="tipoteclado">
+            </div>
+            <div class="mb-3">
+                <label>Marca</label>
+                <input type="text" class="form-control" placeholder="Ingresar la marca del teclado" id="marcateclado">
+            </div>
+
+            <!--Monitor-->
+            <h5 class="text-primary">Caracteristicas del Monitor</h5>
+            <div class="mb-3">
+                <label>Marca</label>
+                <input type="text" class="form-control" placeholder="Ingresar la marca del monitor" id="marcamonitor">
+            </div>
+            <div class="mb-3">
+                <label>Tamaño</label>
+                <input type="text" class="form-control" placeholder="Ingrese la medida de la pantalla" id="tamanomonitor">
+            </div>
+
+            <!--Computadora-->
+            <h5 class="text-primary">Caracteristicas de la Computadora</h5>
+            <div class="mb-3">
+                <label>Nombre de Computadora</label>
+                <input type="text" class="form-control" placeholder="Ingrese la marca de la computadora" id="marcacomputadora">
+            </div>
+        </form>
+
+        <!--Bontes-->
+        <hr>
+        <button id="enviarValores" class="btn btn-dark mb-3" onclick="obtenerValores()">Enviar Orden</button>
+        <button class="btn btn-dark mb-3" id="add_orden" onclick="MostrarOrden()">Mostrar Ordenes</button>
+        <button class="btn btn-dark mb-3" onclick="eliminarInputs()">Limpiar</button>
+        <div id="resultado"></div>
+    </div>
+
+    <br>
+
+   <div class="container">
+        <h2 style="text-align: center;">Ordenes creadas</h2>
+        <table class="table">
+            
+            <tr>
+                <th>#</th>
+                <th>Computadora</th>
+                <th>Monitor</th>
+                <th>Tamaño monitor</th>
+                <th>Teclado</th>
+                <th>Entrada de teclado</th>
+                <th>Raton</th>
+                <th>Entrada del raton</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+   </div>
+  
+      
+      
+
+
+
+
+</body>
+</html>
