@@ -1,4 +1,4 @@
-
+var orden1 = new Orden();
 function obtenerValores(){
     const forma = document.getElementById('forma');
    
@@ -19,7 +19,7 @@ function obtenerValores(){
     
     let computadora1 = new Computadora(marcacomputadora.value, monitor1.toString(), teclado1.toString(), raton1.toString());
 
-    var orden1 = new Orden();
+    
     orden1.agregarComputadora(computadora1.toString());
     let resultado = orden1.toString();
     //console.log(resultado)
